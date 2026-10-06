@@ -27,6 +27,14 @@ importers:
         specifier: ^5.0.3
         version: 5.0.3(vite@8.3.2)
 
+  packages/policy-engine:
+    dependencies:
+      '@agentpermit/shared':
+        specifier: workspace:*
+        version: link:../shared
+
+  packages/shared: {}
+
 packages:
 
   '@cacheable/memory@2.2.0':
